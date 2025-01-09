@@ -5,11 +5,11 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import './index.css'
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-camera.position.set(0, 0, 3); // Adjust these values as needed
+camera.position.set(0, 0, 5); // Adjust these values as needed
 
 const renderer = new THREE.WebGLRenderer(
   { 
-    // antialias: true, 
+    antialias: true, 
     alpha: true 
   }
 );
@@ -34,15 +34,15 @@ rgbeLoader.load('/limpopo_golf_course_1k.hdr', (texture) => {
 // const model = {};
 const loader = new GLTFLoader();
 loader.load(
-  './sec.glb', // Path to your model in the public folder
+  './Plant_Pot.glb', // Path to your model in the public folder
   (gltf) => {
     const model = gltf.scene;
     scene.add(gltf.scene);
-    model.position.set(0, 1, 0);
-    model.scale.set(1, 1, 1);
+    // model.position.set(0, 0, 0);
+    // model.scale.set(1, 1, 1);
     const color = new THREE.Color("#f700a1");
 
-    const texture = new THREE.TextureLoader().load('./pexels-mccutcheon-1191710.jpg' ); 
+    // const texture = new THREE.TextureLoader().load('./pexels-mccutcheon-1191710.jpg' ); 
     // immediately use the texture for material creation 
 
     // const material = new THREE.MeshBasicMaterial( { color:color} );
