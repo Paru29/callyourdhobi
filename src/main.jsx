@@ -5,7 +5,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import './index.css'
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-camera.position.set(0, 0, 5); // Adjust these values as needed
+camera.position.set(0, 0, 4); // Adjust these values as needed
 
 const renderer = new THREE.WebGLRenderer(
   { 
