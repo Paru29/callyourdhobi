@@ -62,7 +62,6 @@ function App() {
         // console.log('Buffering...',data);
       });
       hls.on(Hls.Events.MANIFEST_PARSED, function () {
-        // audio_selector.play();
         togglePlayPause();
         console.log('HLS Manifest loaded, ready to play!');
 
