@@ -15,7 +15,7 @@ function App() {
   const [isPlaying, setIsPlaying] = useState(false);
   
   // 
-  setValue(videoRef.current.currentTime);
+  
   
   const togglePlayPause = () => {
     setIsPlaying(prevState => !prevState);
@@ -63,6 +63,7 @@ function App() {
       });
       hls.on(Hls.Events.MANIFEST_PARSED, function () {
         togglePlayPause();
+        setValue(videoRef.current.currentTime);
         console.log('HLS Manifest loaded, ready to play!');
 
         videoRef.current.addEventListener('progress', () => {
