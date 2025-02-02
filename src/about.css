@@ -1,0 +1,26 @@
+
+.wrapper {
+    width: 100%;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+.one { background: #ff5733; }
+.two { background: #33ff57; }
+.three { background: #3357ff; }
+.four { background: #ff33a8; }
+.five { background: #f39c12; }
