@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import App from "./App";
 import Header from "./Header";
 import About from "./About";
-import "./index.css"
+// import "./index.css"
 
 const root = document.getElementById("root");
 
